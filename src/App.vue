@@ -2,7 +2,15 @@
     <div id="app">
         <div id="nav">
             <router-link to="/">Home</router-link> |
-            <router-link to="/about">About</router-link>
+            <router-link to="/about">About</router-link> |
+            <router-link to="/flex_container/flex-direction"
+                >flex 容器属性：flex-direction</router-link
+            >
+            |
+            <router-link to="/flex_container/flex-wrap"
+                >flex 容器属性：flex-wrap（使用手机模式查看）</router-link
+            >
+            |
         </div>
         <div>===以下是内容===</div>
         <router-view />

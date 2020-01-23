@@ -1,28 +1,21 @@
 <template>
     <div>
-        <div>flex-direction: row;（默认值）</div>
-        <div class="flex_container row">
+        <div>flex-wrap: nowrap;（默认值）</div>
+        <div class="flex_container nowrap">
             <div class="flex_item">1</div>
             <div class="flex_item">2</div>
             <div class="flex_item">3</div>
             <div class="flex_item">4</div>
         </div>
-        <div>flex-direction: row-reverse;</div>
-        <div class="flex_container row-reverse">
+        <div>flex-wrap: wrap;</div>
+        <div class="flex_container wrap">
             <div class="flex_item">1</div>
             <div class="flex_item">2</div>
             <div class="flex_item">3</div>
             <div class="flex_item">4</div>
         </div>
-        <div>flex-direction: column;</div>
-        <div class="flex_container column">
-            <div class="flex_item">1</div>
-            <div class="flex_item">2</div>
-            <div class="flex_item">3</div>
-            <div class="flex_item">4</div>
-        </div>
-        <div>flex-direction: column-reverse;</div>
-        <div class="flex_container column-reverse">
+        <div>flex-wrap: wrap-reverse;</div>
+        <div class="flex_container wrap-reverse">
             <div class="flex_item">1</div>
             <div class="flex_item">2</div>
             <div class="flex_item">3</div>
@@ -40,22 +33,19 @@ export default {}
     display: flex;
 }
 .flex_item {
-    width: 50px;
+    width: 300px;
     border: 1px solid blue;
     text-align: center;
     height: 50px;
     line-height: 50px;
 }
-.row {
-    flex-direction: row;
+.nowrap {
+    flex-wrap: nowrap;
 }
-.row-reverse {
-    flex-direction: row-reverse;
+.wrap {
+    flex-wrap: wrap;
 }
-.column {
-    flex-direction: column;
-}
-.column-reverse {
-    flex-direction: column-reverse;
+.wrap-reverse {
+    flex-wrap: wrap-reverse;
 }
 </style>

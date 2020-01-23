@@ -1,8 +1,8 @@
-import Vue from "vue";
-import VueRouter from "vue-router";
-import Home from "../views/Home.vue";
+import Vue from "vue"
+import VueRouter from "vue-router"
+import Home from "../views/Home.vue"
 
-Vue.use(VueRouter);
+Vue.use(VueRouter)
 
 const routes = [
     {
@@ -18,13 +18,23 @@ const routes = [
         // which is lazy-loaded when the route is visited.
         component: () =>
             import(/* webpackChunkName: "about" */ "../views/About.vue")
+    },
+    {
+        path: "/flex_container/flex-direction",
+        name: "flex-direction",
+        component: () => import("../views/flex_container/flex-direction.vue")
+    },
+    {
+        path: "/flex_container/flex-wrap",
+        name: "flex-wrap",
+        component: () => import("../views/flex_container/flex-wrap.vue")
     }
-];
+]
 
 const router = new VueRouter({
     mode: "history",
     base: process.env.BASE_URL,
     routes
-});
+})
 
-export default router;
+export default router
