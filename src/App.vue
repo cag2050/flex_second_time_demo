@@ -3,14 +3,28 @@
         <div id="nav">
             <router-link to="/">Home</router-link> |
             <router-link to="/about">About</router-link> |
+            <div>===Flex 容器（flex container）属性：===</div>
             <router-link to="/flex_container/flex-direction"
-                >flex 容器属性：flex-direction</router-link
+                >flex-direction</router-link
             >
             |
             <router-link to="/flex_container/flex-wrap"
-                >flex 容器属性：flex-wrap（使用手机模式查看）</router-link
+                >flex-wrap（使用手机模式查看）</router-link
             >
             |
+            <router-link to="/flex_container/justify-content"
+                >justify-content</router-link
+            >
+            |
+            <router-link to="/flex_container/align-items"
+                >align-items</router-link
+            >
+            |
+            <router-link to="/flex_container/align-content"
+                >align-content（使用手机模式查看）</router-link
+            >
+            |
+            <div>===Flex 项目（flex item）属性：===</div>
         </div>
         <div>===以下是内容===</div>
         <router-view />

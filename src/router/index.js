@@ -28,6 +28,21 @@ const routes = [
         path: "/flex_container/flex-wrap",
         name: "flex-wrap",
         component: () => import("../views/flex_container/flex-wrap.vue")
+    },
+    {
+        path: "/flex_container/justify-content",
+        name: "justify-content",
+        component: () => import("../views/flex_container/justify-content.vue")
+    },
+    {
+        path: "/flex_container/align-items",
+        name: "align-items",
+        component: () => import("../views/flex_container/align-items.vue")
+    },
+    {
+        path: "/flex_container/align-content",
+        name: "align-content",
+        component: () => import("../views/flex_container/align-content.vue")
     }
 ]
 
