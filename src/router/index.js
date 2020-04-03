@@ -53,6 +53,21 @@ const routes = [
         path: "/flex_item/flex-grow",
         name: "flex-grow",
         component: () => import("../views/flex_item/flex-grow.vue")
+    },
+    {
+        path: "/flex_item/flex-shrink",
+        name: "flex-shrink",
+        component: () => import("../views/flex_item/flex-shrink.vue")
+    },
+    {
+        path: "/flex_item/flex-basis",
+        name: "flex-basis",
+        component: () => import("../views/flex_item/flex-basis.vue")
+    },
+    {
+        path: "/flex_item/align-self",
+        name: "align-self",
+        component: () => import("../views/flex_item/align-self.vue")
     }
 ]
 

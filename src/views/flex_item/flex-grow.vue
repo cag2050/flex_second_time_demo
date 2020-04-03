@@ -4,13 +4,13 @@
             flex-grow
             属性定义项目的放大比例，默认为0，即如果存在剩余空间，也不放大。
         </div>
-        <div class="flex_container row">
+        <div class="flex_container">
             <div class="flex_item item1">1（flex-grow: 1）</div>
             <div class="flex_item item2">2（flex-grow: 2）</div>
             <div class="flex_item item3">3（flex-grow: 0）</div>
         </div>
         <div>===</div>
-        <div class="flex_container row-reverse">
+        <div class="flex_container">
             <div class="flex_item grow1">1（flex-grow: 1）</div>
             <div class="flex_item grow2">2（flex-grow: 2）</div>
             <div class="flex_item grow1">3（flex-grow: 1）</div>

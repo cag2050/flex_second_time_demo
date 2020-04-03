@@ -28,8 +28,18 @@
             <router-link to="/flex_item/order">order（默认为0）</router-link>
             |
             <router-link to="/flex_item/flex-grow"
-                >flex-grow（默认为0）</router-link
+                >flex-grow（默认为0，即如果存在剩余空间，也不放大）</router-link
             >
+            |
+            <router-link to="/flex_item/flex-shrink"
+                >flex-shrink（默认为1，即如果空间不足，该项目将缩小）</router-link
+            >
+            |
+            <router-link to="/flex_item/flex-basis"
+                >flex-basis（默认值为 auto，即项目的本来大小）</router-link
+            >
+            |
+            <router-link to="/flex_item/align-self">align-self</router-link>
             |
         </div>
         <div>===以下是内容===</div>
