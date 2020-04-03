@@ -8,8 +8,11 @@
             <div class="baseline_item baseline_item2">
                 222222222222222222222222222222222222222222222222
             </div>
+            <!-- 彻底搞懂word-break、word-wrap、white-space：https://juejin.im/post/5b8905456fb9a01a105966b4 -->
             <div class="baseline_item baseline_item3">
-                333333333333333333333333333333333
+                Hi&nbsp;&nbsp;, This is a incomprehensibilities long word.
+                <br />
+                你好&nbsp;&nbsp;， 这 是一个不可思议的长单词
             </div>
         </div>
         <div>align-items: flex-start;</div>
@@ -61,7 +64,8 @@ export default {}
     /*height: 100px;*/
     width: 100px;
     text-decoration: underline;
-    word-break: break-all;
+    word-break: break-word;
+    overflow-wrap: break-word;
 }
 .baseline_item1 {
     height: 150px;
