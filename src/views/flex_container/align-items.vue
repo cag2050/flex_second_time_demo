@@ -64,7 +64,10 @@ export default {}
     /*height: 100px;*/
     width: 100px;
     text-decoration: underline;
+    /* word-break属性除了列出的那三个值外，也有个break-word值，效果跟这里的word-wrap:break-word一样，然而只有Chrome、Safari等部分浏览器支持 */
     word-break: break-word;
+    /* 由于历史原因，当你使用 overflow-wrap 时，最好同时使用 word-wrap 作为备选，作向前兼容 */
+    word-wrap: break-word;
     overflow-wrap: break-word;
 }
 .baseline_item1 {
