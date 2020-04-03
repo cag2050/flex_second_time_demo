@@ -25,6 +25,12 @@
             >
             |
             <div>===Flex 项目（flex item）属性：===</div>
+            <router-link to="/flex_item/order">order（默认为0）</router-link>
+            |
+            <router-link to="/flex_item/flex-grow"
+                >flex-grow（默认为0）</router-link
+            >
+            |
         </div>
         <div>===以下是内容===</div>
         <router-view />

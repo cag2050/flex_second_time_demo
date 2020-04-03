@@ -43,6 +43,16 @@ const routes = [
         path: "/flex_container/align-content",
         name: "align-content",
         component: () => import("../views/flex_container/align-content.vue")
+    },
+    {
+        path: "/flex_item/order",
+        name: "order",
+        component: () => import("../views/flex_item/order.vue")
+    },
+    {
+        path: "/flex_item/flex-grow",
+        name: "flex-grow",
+        component: () => import("../views/flex_item/flex-grow.vue")
     }
 ]
 
